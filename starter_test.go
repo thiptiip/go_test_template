@@ -19,27 +19,27 @@ func TestSayHello(t *testing.T) {
 // }
 
 func TestEvenOrOdd(t *testing.T) {
-	t.Run("Check Non Negative Odd  Numbers", func(t *testing.T) {
-		assert.Equal(t, "50 is an Odd  number", OddOrEven(3))
-		assert.Equal(t, "42 is an Odd  number", OddOrEven(3))
-		assert.Equal(t, "0 is an Odd  number", OddOrEven(3))
+	t.Run("Check Non Negative even  Numbers", func(t *testing.T) {
+		assert.Equal(t, "50 is an even number", OddOrEven(50))
+		assert.Equal(t, "42 is an even number", OddOrEven(42))
+		assert.Equal(t, "0 is an even number", OddOrEven(0))
+	})
+
+	t.Run("Check Non Negative even  Numbers", func(t *testing.T) {
+		assert.Equal(t, "-50 is an even number", OddOrEven(-50))
+		assert.Equal(t, "-42 is an even number", OddOrEven(-42))
 	})
 
 	t.Run("Check Non Negative Odd  Numbers", func(t *testing.T) {
-		assert.Equal(t, "-50 is an Odd  number", OddOrEven(3))
-		assert.Equal(t, "-42 is an Odd  number", OddOrEven(3))
+		assert.Equal(t, "3 is an odd number", OddOrEven(3))
+		assert.Equal(t, "9 is an odd number", OddOrEven(9))
+		assert.Equal(t, "55 is an odd number", OddOrEven(55))
 	})
 
-	t.Run("Check Non Negative Odd  Numbers", func(t *testing.T) {
-		assert.Equal(t, "3 is an Odd  number", OddOrEven(3))
-		assert.Equal(t, "9 is an Odd  number", OddOrEven(3))
-		assert.Equal(t, "55 is an Odd  number", OddOrEven(3))
-	})
-
-	t.Run("Check Non Negative Odd  Numbers", func(t *testing.T) {
-		assert.Equal(t, "50 is an Odd  number", OddOrEven(3))
-		assert.Equal(t, "42 is an Odd  number", OddOrEven(3))
-		assert.Equal(t, "0 is an Odd  number", OddOrEven(3))
+	t.Run("Check Non Negative even  Numbers", func(t *testing.T) {
+		assert.Equal(t, "50 is an even number", OddOrEven(50))
+		assert.Equal(t, "42 is an even number", OddOrEven(42))
+		assert.Equal(t, "0 is an even number", OddOrEven(0))
 	})
 	t.Run("Check Negative Odd Numbers", func(t *testing.T) {
 		assert.Equal(t, "-45 is an odd number", OddOrEven(-45))
